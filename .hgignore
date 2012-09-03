@@ -1,0 +1,3 @@
+# The default pattern syntax is Python/Perl-style regular expressions.
+
+\.DS_Store$

@@ -1,0 +1,46 @@
+\documentclass{article}
+
+
+\setlength{\parindent}{0in}  % paragraph indention amount
+\setlength{\parskip}{0.1in}  % space between paragraphs
+
+
+% These packages are not all needed; they're here to show what's available.
+\usepackage{type1cm}
+\usepackage{fullpage}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{listings}     % \begin{lstlisting} ... \end{lstlisting},
+                          % \lstinputlisting{MyClass.h}
+\usepackage{verbatim}     % \begin{verbatim} ... \end{verbatim}
+
+
+\title{LaTeX Article}
+\author{Ryan Henning}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+
+\section*{A Nice Little DFA}
+
+This DFA recognizes the language $L$, where:
+$L = \{w \mid w$ contains at least three $1$s$\}$
+\begin{center}
+\includegraphics[scale=0.75]{Figure_1.6b.eps}
+\end{center}
+
+
+\section*{A Cool Equation}
+
+$$e^{\pi i} + 1 = 0$$
+
+
+\end{document}
