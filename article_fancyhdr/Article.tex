@@ -1,4 +1,7 @@
 \documentclass{article}
+\def\title#1{\gdef\@title{#1}\gdef\THETITLE{#1}}
+\def\author#1{\gdef\@author{#1}\gdef\THEAUTHOR{#1}}
+\def\date#1{\gdef\@date{#1}\gdef\THEDATE{#1}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -40,8 +43,8 @@
 %% E/O   == even/odd
 
 \fancyhead{}  % clear all the header info
-\fancyhead[LO,RE]{\leftmark}
-\fancyhead[LE,RO]{\title}
+\fancyhead[LO,RE]{{\Large\THETITLE}}
+\fancyhead[LE,RO]{\THEAUTHOR \\ \THEDATE}
 
 \fancyfoot{}  % clear all the footer info
 \fancyfoot[RO,RE]{\slshape\thepage}
