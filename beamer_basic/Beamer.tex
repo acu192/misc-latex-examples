@@ -1,6 +1,14 @@
-\documentclass{beamer}
+\documentclass[xcolor=dvipsnames]{beamer}
 % If you want to print these slide as a handout, use the following instead:
-% \documentclass[handout]{beamer}
+% \documentclass[handout,xcolor=dvipsnames]{beamer}
+
+
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+%\usepackage{times}
 
 
 \mode<presentation>
@@ -26,16 +34,18 @@
     %\usetheme{Warsaw}       % classic, shadowy (recommended)
     %\usetheme{default}      % the default (duh)
 
-    \setbeamercovered{transparent}   % or whatever (possibly just delete it)
+    \usecolortheme[named=OliveGreen]{structure}   % or whatever... possibly just delete this
+    \usefonttheme{structurebold}                  % or whatever... possibly just delete this
+
+    \setbeamercovered{transparent}  % or try 'invisible'
 }
 
 
-\usepackage[english]{babel}
-
-\usepackage[latin1]{inputenc}
-
-\usepackage{times}
-\usepackage[T1]{fontenc}
+\hypersetup
+{
+    unicode=true,
+    pdfauthor={Ryan Henning}
+}
 
 
 \title[Short Paper Title]
